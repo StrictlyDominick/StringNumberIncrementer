@@ -10,6 +10,7 @@ int main()
 	std::string fullString;
 	std::string subString;
 	std::string fileLocation;
+	std::string tempString;
 	bool exitFlag = true;
 
 	//Main program loop
@@ -23,7 +24,7 @@ int main()
 		if (fileLocation == "q") break;
 
 		//Request the full string in the file to be located and used for incrementing numbers
-		std::cout << "Please enter the string that in which the number contained inside will be incremented" << std::endl;
+		std::cout << "Please enter the string in which the number contained inside will be incremented" << std::endl;
 		std::cin >> fullString;
 		if (fullString == "q") break;
 
@@ -32,7 +33,28 @@ int main()
 		std::cin >> subString;
 		if (subString == "q") break;
 
-		if ()
+		ReadFile.open(fileLocation);
+
+		if (!ReadFile.good())
+		{
+			//Request file location from user
+			std::cout << "Invalid file Location. Please enter the location of file." << std::endl;
+			std::cin >> fileLocation;
+			if (fileLocation == "q") break;
+			ReadFile.open(fileLocation);
+			if (!ReadFile.good()) break;
+		}
+
+		//File Read Loop
+		while (!ReadFile.eof())
+		{
+			std::getline(ReadFile, tempString);
+
+			if (tempString.find(fullString) != std::string::npos)
+			{
+
+			}
+		}
 	}
 
 	return 0;
