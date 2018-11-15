@@ -1,0 +1,81 @@
+-- Test Case: wxr_133entry.
+TEST.UNIT:wxr_process
+TEST.SUBPROGRAM:wxr_entry
+TEST.NEW
+TEST.NAME:wxr_133entry.
+TEST.COMPOUND_ONLY
+TEST.NOTES:
+Requirements Tested:
+WxR_HLD_235 - Normal - Partial: ADP_DSC_COMMON_PARAMETERS_MESSAGE
+WxR_HLD_235 - Normal - Partial: ADP_DSC_VARIABLE_FORMAT_ACTIVE_MESSAGE
+WxR_HLD_235 - Normal - Partial: SELECTED_OWNSHIP_POSITION_MESSAGE
+WxR_HLD_235 - Normal - Partial: SELECTED_HEADING_MESSAGE
+WxR_HLD_235 - Normal - Partial: WEATHER_INDICATION_DATA_MESSAGE
+WxR_HLD_235 - Normal - Partial: WEATHER_RANGE_BIN_DATA_MESSAGE
+WxR_HLD_235 - Normal - Partial: ADP_WXR_GRAPHICS_MESSAGE
+WxR_HLD_262 - Normal - Partial: WEATHER_SCAN_ANGLE at just below upper bounds 179.9
+WxR_HLD_253 - Normal - Partial: WEATHER_SCAN_ANGLE at just below upper bounds 179.9
+
+= == = == = == = == = == = == = == = == = == = == = == 
+Setup for all Test Objectives
+= == = == = == = == = == = == = == = == = == = == = == -- Test Case: wxr_133entry.
+TEST.UNIT:wxr_process
+TEST.SUBPROGRAM:wxr_entry
+TEST.NEW
+TEST.NAME:wxr_133entry.
+TEST.COMPOUND_ONLY
+TEST.NOTES:
+Requirements Tested:
+WxR_HLD_235 - Normal - Partial: ADP_DSC_COMMON_PARAMETERS_MESSAGE
+WxR_HLD_235 - Normal - Partial: ADP_DSC_VARIABLE_FORMAT_ACTIVE_MESSAGE
+WxR_HLD_235 - Normal - Partial: SELECTED_OWNSHIP_POSITION_MESSAGE
+WxR_HLD_235 - Normal - Partial: SELECTED_HEADING_MESSAGE
+WxR_HLD_235 - Normal - Partial: WEATHER_INDICATION_DATA_MESSAGE
+WxR_HLD_235 - Normal - Partial: WEATHER_RANGE_BIN_DATA_MESSAGE
+WxR_HLD_235 - Normal - Partial: ADP_WXR_GRAPHICS_MESSAGE
+WxR_HLD_262 - Normal - Partial: WEATHER_SCAN_ANGLE at just below upper bounds 179.9
+WxR_HLD_253 - Normal - Partial: WEATHER_SCAN_ANGLE at just below upper bounds 179.9
+
+= == = == = == = == = == = == = == = == = == = == = == 
+Setup for all Test Objectives
+= == = == = == = == = == = == = == = == = == = == = == -- Test Case: wxr_133entry.
+TEST.UNIT:wxr_process
+TEST.SUBPROGRAM:wxr_entry
+TEST.NEW
+TEST.NAME:wxr_133entry.
+TEST.COMPOUND_ONLY
+TEST.NOTES:
+Requirements Tested:
+WxR_HLD_235 - Normal - Partial: ADP_DSC_COMMON_PARAMETERS_MESSAGE
+WxR_HLD_235 - Normal - Partial: ADP_DSC_VARIABLE_FORMAT_ACTIVE_MESSAGE
+WxR_HLD_235 - Normal - Partial: SELECTED_OWNSHIP_POSITION_MESSAGE
+WxR_HLD_235 - Normal - Partial: SELECTED_HEADING_MESSAGE
+WxR_HLD_235 - Normal - Partial: WEATHER_INDICATION_DATA_MESSAGE
+WxR_HLD_235 - Normal - Partial: WEATHER_RANGE_BIN_DATA_MESSAGE
+WxR_HLD_235 - Normal - Partial: ADP_WXR_GRAPHICS_MESSAGE
+WxR_HLD_262 - Normal - Partial: WEATHER_SCAN_ANGLE at just below upper bounds 179.9
+WxR_HLD_253 - Normal - Partial: WEATHER_SCAN_ANGLE at just below upper bounds 179.9
+
+= == = == = == = == = == = == = == = == = == = == = == 
+Setup for all Test Objectives
+= == = == = == = == = == = == = == = == = == = == = == -- Test Case: wxr_133entry.
+TEST.UNIT:wxr_process
+TEST.SUBPROGRAM:wxr_entry
+TEST.NEW
+TEST.NAME:wxr_133entry.
+TEST.COMPOUND_ONLY
+TEST.NOTES:
+Requirements Tested:
+WxR_HLD_235 - Normal - Partial: ADP_DSC_COMMON_PARAMETERS_MESSAGE
+WxR_HLD_235 - Normal - Partial: ADP_DSC_VARIABLE_FORMAT_ACTIVE_MESSAGE
+WxR_HLD_235 - Normal - Partial: SELECTED_OWNSHIP_POSITION_MESSAGE
+WxR_HLD_235 - Normal - Partial: SELECTED_HEADING_MESSAGE
+WxR_HLD_235 - Normal - Partial: WEATHER_INDICATION_DATA_MESSAGE
+WxR_HLD_235 - Normal - Partial: WEATHER_RANGE_BIN_DATA_MESSAGE
+WxR_HLD_235 - Normal - Partial: ADP_WXR_GRAPHICS_MESSAGE
+WxR_HLD_262 - Normal - Partial: WEATHER_SCAN_ANGLE at just below upper bounds 179.9
+WxR_HLD_253 - Normal - Partial: WEATHER_SCAN_ANGLE at just below upper bounds 179.9
+
+= == = == = == = == = == = == = == = == = == = == = == 
+Setup for all Test Objectives
+= == = == = == = == = == = == = == = == = == = == = == 
