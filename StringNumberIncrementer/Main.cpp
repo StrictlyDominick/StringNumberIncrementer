@@ -16,6 +16,7 @@ int main()
 	std::string fileLocation;
 	std::size_t position[4];
 	std::size_t decimalPosition;
+	int incrementValue;
 	bool exitFlag = true;
 
 	//Main program loop
@@ -29,13 +30,17 @@ int main()
 		if (fileLocation == "q") break;
 
 		//Request the full string in the file to be located and used for incrementing numbers
-		std::cout << "Please enter the string in which the number contained inside will be incremented" << std::endl;
+		std::cout << "Please enter the string in which the number contained inside will be incremented:" << std::endl;
 		std::cin >> fullString;
 		if (fullString == "q") break;
 
 		//Request the substring of fullString that is the number to be incremented
-		std::cout << "Enter the part of the string that contains the number to be incremented" << std::endl;
+		std::cout << "Enter the part of the string that contains the number to be incremented:" << std::endl;
 		std::cin >> subString;
+		if (subString == "q") break;
+
+		std::cout << "Enter the number to increment the number by:" << std::endl;
+		std::cin >> incrementValue;
 		if (subString == "q") break;
 
 		//Checking for file validity
@@ -78,68 +83,40 @@ int main()
 					//Starting from right to left will increment all position of string
 					for (int index = 0; index < subString.size(); index++)
 					{
-						switch (tempString.at(position[3]))
+						if (tempString.at(position[3]) + incrementValue > '9')
 						{
-						case '0':
-							tempString.replace(position[3], 1, 1, '1');
-							index = subString.size();
-							break;
-						case '1':
-							tempString.replace(position[3], 1, 1, '2');
-							index = subString.size();
-							break;
-						case '2':
-							tempString.replace(position[3], 1, 1, '3');
-							index = subString.size();
-							break;
-						case '3':
-							tempString.replace(position[3], 1, 1, '4');
-							index = subString.size();
-							break;
-						case '4':
-							tempString.replace(position[3], 1, 1, '5');
-							index = subString.size();
-							break;
-						case '5':
-							tempString.replace(position[3], 1, 1, '6');
-							index = subString.size();
-							break;
-						case '6':
-							tempString.replace(position[3], 1, 1, '7');
-							index = subString.size();
-							break;
-						case '7':
-							tempString.replace(position[3], 1, 1, '8');
-							index = subString.size();
-							break;
-						case '8':
-							tempString.replace(position[3], 1, 1, '9');
-							break;
-						case '9':
-							//Make sure there isn't another positon to the left
-							if (position[2] - position[3] != 0)
-							{
-								tempString.replace(position[3], 1, 1, '0');
-								position[3]--;
-							}
-							break;
+							tempString.replace(position[3], 1, 1, '0');
 						}
+						else
+						{
+							tempString.replace(position[3], 1, 1, tempString.at(position[3]) + 1);
+							index = subString.size();
+						}
+
+
+						//Make sure there isn't another positon to the left
+						if (position[2] - position[3] != 0)
+						{
+							tempString.replace(position[3], 1, 1, '0');
+							position[3]--;
+						}
+						break;
 					}
-					std::cout << "Before seek Change = " << ReadFile.tellp() << std::endl;
-					ReadFile.seekp(ReadFile.tellp() - (std::streampos)(tempString.size() + 2));
-					std::cout << "After seek Change = " << ReadFile.tellp() << std::endl;
-					ReadFile << tempString;
-					ReadFile.seekp(ReadFile.tellp() + (std::streampos)2);
-
 				}
-			}
+				std::cout << "Before seek Change = " << ReadFile.tellp() << std::endl;
+				ReadFile.seekp(ReadFile.tellp() - (std::streampos)(tempString.size() + 2));
+				std::cout << "After seek Change = " << ReadFile.tellp() << std::endl;
+				ReadFile << tempString;
+				ReadFile.seekp(ReadFile.tellp() + (std::streampos)2);
 
+			}
 		}
 
 	}
 
 	return 0;
 }
+
 
 std::string poTopoSubstring(std::string String, std::size_t first, std::size_t last)
 {
